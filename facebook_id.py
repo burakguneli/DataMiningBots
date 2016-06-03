@@ -17,8 +17,8 @@ for adam in adamlar:
 	print "processing adam id = " + str(adam) + "..."
 
 	page = "https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fapp_scoped_user_id%2F"+ str(adam) +"%2F"
-	username = "ruzgar.kilik@gmail.com"
-	password = "kilikonkilikon"
+	username = ""
+	password = ""
 
 	driver = webdriver.Firefox()
 	driver.get(page)
