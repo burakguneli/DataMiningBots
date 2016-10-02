@@ -18,8 +18,8 @@ for adam in adamlar:
 	print "processing adam id = " + str(adam)
 
 	page = "https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fapp_scoped_user_id%2F"+ str(adam) +"%2F"
-	username = "ruzgar.kilik@gmail.com"
-	password = "kilikonkilikon"
+	username = ""
+	password = ""
 
 	driver = webdriver.PhantomJS(executable_path=r'/home/burak/phantomjs/bin/phantomjs')
 	driver.set_window_size(480, 320)
@@ -45,9 +45,7 @@ for adam in adamlar:
 
 	if adam:
 
-		link1 = "http://159.203.102.164/bots/facebook_email_update.php?id="+str(adam)+"&email="+x+"@facebook.com"	
+		link1 = "http://159.203.102.164/bots/facebook_email_update.php?id="+str(adam)+"&email="+x+"@facebook.com"
 		req = urllib2.urlopen(link1)
 		if req == 1:
 			print "done"
-
-
